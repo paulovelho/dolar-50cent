@@ -19,15 +19,13 @@
 		<style type="text/css" media="screen">
 			#radial-center { 
 				/* fallback */ 
-				background-color: <?=$color1?>; 
+				background-color: <?=$color2?>; 
 				background-position: center center; 
 				background-repeat: no-repeat; 
 				
 				/* Safari 4-5, Chrome 1-9 */ 
 				/* Can't specify a percentage size? Laaaaaame. */ 
 				background: -webkit-gradient(radial, center center, 0, center center, 460, from(<?=$color2?>), to(<?=$color1?>)); 
-				/* Safari 5.1+, Chrome 10+ */ 
-				background: -webkit-radial-gradient(circle, <?=$color2?>, <?=$color1?>); 
 				/* Firefox 3.6+ */ 
 				background: -moz-radial-gradient(circle, <?=$color2?>, <?=$color1?>); 
 				/* IE 10 */ 
