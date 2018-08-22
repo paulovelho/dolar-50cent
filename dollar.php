@@ -1,9 +1,10 @@
 <?php
 	include_once("lib/WideImage/WideImage.php");
 
-	$financeApi = "http://finance.yahoo.com/d/quotes.csv?s=USDBRL=X&f=l1";
-	$rate = file_get_contents($financeApi);
-	$rate = doubleval($rate);
+	$financeApi = "http://free.currencyconverterapi.com/api/v5/convert?q=USD_BRL&compact=y";
+	$apiData = file_get_contents($financeApi);
+	$data = json_encode($apiData);
+	$rate = doubleval($data["USD_BRL"]);
 
 	$cent50 = "R$ ".number_format($rate/2, 2, ',', '.');
 	$rate = "R$ ".number_format($rate, 2, ',', '.');
