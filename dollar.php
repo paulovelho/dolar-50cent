@@ -10,7 +10,7 @@
 
 
 	$images = array("50cent_1.jpg", "50cent_2.jpg", "50cent_3.jpg", "50cent_4.jpg", "50cent-newyork.jpg");
-	$dollarPath = "/Users/paulovelho/Sites/paulovelho/dollar";
+	$dollarPath = "/home/paulovelho/paulovelho.com/dollar";
 	$imagePath = $dollarPath."/images/";
 	
 	$cent = $images[array_rand($images)];
