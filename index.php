@@ -11,9 +11,6 @@
 	$apiData = file_get_contents($financeApi);
 	$data = json_decode($apiData);
 
-	print_r($data);
-	echo "val: ".$data->USD_BRL->val;
-
 ?>
 
 
