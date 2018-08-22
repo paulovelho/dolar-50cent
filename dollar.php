@@ -3,7 +3,7 @@
 
 	$financeApi = "http://free.currencyconverterapi.com/api/v5/convert?q=USD_BRL&compact=y";
 	$apiData = file_get_contents($financeApi);
-	$data = json_encode($apiData);
+	$data = json_decode($apiData);
 	$rate = doubleval($data["USD_BRL"]);
 
 	$cent50 = "R$ ".number_format($rate/2, 2, ',', '.');

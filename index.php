@@ -9,7 +9,7 @@
 
 	$financeApi = "http://free.currencyconverterapi.com/api/v5/convert?q=USD_BRL&compact=y";
 	$apiData = file_get_contents($financeApi);
-	$data = json_encode($apiData);
+	$data = json_decode($apiData);
 
 	print_r($data);
 	echo "val: ".$data["USD_BRL"];
