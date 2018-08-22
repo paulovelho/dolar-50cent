@@ -12,7 +12,7 @@
 	$data = json_decode($apiData);
 
 	print_r($data);
-	echo "val: ".$data->USD_BRL;
+	echo "val: ".$data->USD_BRL->val;
 
 ?>
 
