@@ -6,11 +6,6 @@
 	$color1 = "#297A29";
 	$color2 = "#EBF5EB";
 
-
-	$financeApi = "http://free.currencyconverterapi.com/api/v5/convert?q=USD_BRL&compact=y";
-	$apiData = file_get_contents($financeApi);
-	$data = json_decode($apiData);
-
 ?>
 
 
