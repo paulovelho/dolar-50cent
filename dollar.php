@@ -1,7 +1,7 @@
 <?php
 	include_once("lib/WideImage/WideImage.php");
 
-	$apikey = "1cbeb1823394269ffac7";
+	$apikey = "33182f97fc20739d6eed";
 	$financeApi = "http://free.currencyconverterapi.com/api/v5/convert?q=USD_BRL&compact=ultra&apiKey=".$apikey;
 	$apiData = file_get_contents($financeApi);
 	$data = json_decode($apiData);
